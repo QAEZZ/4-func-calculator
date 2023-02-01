@@ -38,19 +38,7 @@ fun clear() {
 }
 
 fun main() {
-    /*
-    val math = Math(1, 3)
-    println(math.divide())
-    
-    
-    // Creates an instance which takes input from standard input (keyboard)
-    
-    print("Enter a number: ")
 
-    // nextInt() reads the next integer from the keyboard
-    var integer:Int = reader.nextInt()
-    println(integer)
-    */
     clear()
     print("""
 Choose an operation:
@@ -62,16 +50,6 @@ Choose an operation:
 Operation>>> """)
     // https://www.programiz.com/kotlin-programming/input-output
     var operation = readLine()!!
-
-    /*
-    val mon = "Sunday"
-    val month = when(mon) {
-    "Jan", "Feb", "Mar" -> "First Quarter"
-    "Apr", "May", "June" -> "Second half"
-    else -> "Half quarter end"
-    }
-    Println ("mon is $month")
-    */
     
     // https://www.educba.com/kotlin-when-multiple-conditions/
     var valid: Boolean = when(operation) {
@@ -97,7 +75,7 @@ Operation>>> """)
 
     val math = Math(int1, int2)
     clear()
-    
+
     if (operation == "+") {
         println("$int1 + $int2 = ${math.add()}")
     } else if (operation == "-") {
